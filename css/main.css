@@ -100,23 +100,120 @@ textarea {
     position: relative;
 }
 
+.bar{
+    position: absolute;
+    height: 100%;
+    width:50px; 
+    top:0;
+    background:rgba(0,0,0,0.05);
+}
+
+
+.bar.zero{
+    left:0;
+}
+
+.bar.one{
+    left:100px;
+}
+
+.bar.two{
+    left:200px;
+}
+
+.bar.three{
+    left:300px;
+}
+
+.bar.four{
+    left:400px;
+}
+
+.bar.five{
+    left:500px;
+}
+
+.bar.six{
+    left:600px;
+}
+
+.bar.seven{
+    left:700px;
+}
+
+.bar.eight{
+    left:800px;
+}
+
+.bar.nine{
+    left:900px;
+}
+
+.bar.ten{
+    left:1000px;
+}
+
+.bar.eleven{
+    left:1100px;
+}
+
+.bar.twelve{
+    left:1200px;
+}
+
+.bar.thirteen{
+    left:1300px;
+}
+
+.bar.fourteen{
+    left:1400px;
+}
+
+.bar.fifteen{
+    left:1500px;
+}
+
+.bar.sixteen{
+    left:1600px;
+}
+
+.bar.seventeen{
+    left:1750px;
+}
+
 .ball{
     transition: all ease-in-out .4s;
     position:absolute;
     z-index:1;
-    height:calc(100% / 2);
-    background:rgba(0,0,0,0.7);
+}
+
+.section1Content{
+    position:absolute;
+    
 }
 
 .bottomFooter{
-    height:100px;
-    text-align: center;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.bottomFooter span{
+.bottomFooter>div{
+    position: absolute;
+    z-index: 2;
+    margin: 35px 0 0 -100px;
+}
+
+.bottomFooter>div span{
     color:white;
     font-size:24px;
     margin:0 10px;
+    cursor:pointer;
+}
+
+#fp-nav ul li a span{
+    background:white;
 }
 
 /* ==========================================================================

@@ -7,7 +7,7 @@
         anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'footer'],
         navigation: true,
         navigationPosition: 'left',
-        navigationTooltips: ['First Slide', 'Second Slide', 'Third Slide', 'Fourth Slide', 'Footer'],
+        navigationTooltips: ['Intro', 'Techforce Pro', 'Core Caseworks', 'Wicked Design', 'Education', 'Contact'],
         showActiveTooltip: false,
         slidesNavigation: true,
         slidesNavPosition: 'bottom',
@@ -39,7 +39,7 @@
         //Design
         controlArrows: true,
         verticalCentered: true,
-        sectionsColor : ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', 'gray'],
+        sectionsColor : ['aliceblue', '#4BBFC3', '#7BAABE', 'whitesmoke', 'whitesmoke'],
         responsiveWidth: 0,
         responsiveHeight: 0,
 
@@ -64,21 +64,52 @@
     function setBall(nextIndex){
             var ball = $('.ball');
             var height = $('#fullpage').height();
+            var width = $('#fullpage').width();
             switch(nextIndex){
                 case 1:
-                ball.css({'border-radius':'0', 'height': '100%', 'width':'50px', 'margin': '0 0 0 50px'});
+                ball.css({
+                    'border-radius':'10px', 
+                    'height': '80%', 
+                    'width':'80%', 
+                    'margin': height * .1 + 'px 0 0 ' + width * .1 + 'px',
+                    'background':'rgba(0,0,0,0.3)'
+                });
                 break;
                 case 2:
-                ball.css({'border-radius':'0', 'height': '50%', 'width':'100%',  'margin': height * 1.25 + 'px 0 0 0'});                
+                ball.css({
+                    'border-radius':'0', 
+                    'height': '50%', 
+                    'width':'100%',  
+                    'margin': height * 1.25 + 'px 0 0 0',
+                    'background':'rgba(0,0,0,0.7)'
+                });                
                 break;
                 case 3:
-                ball.css({'border-radius':'50%', 'height': '50%', 'width':ball.height(),  'margin':height * 2.25 + 'px 0 0 55%'});
+                ball.css({
+                    'border-radius':'50%', 
+                    'height': '50%', 
+                    'width':ball.height(),  
+                    'margin':height * 2.25 + 'px 0 0 55%',
+                    'background':'rgba(0,0,0,0.7)'
+                });
                 break;
                 case 4:
-                ball.css({'border-radius':'0', 'height': '50%', 'width':'80%',  'margin':height * 3.25 + 'px 0 0 10%'});                                
+                ball.css({
+                    'border-radius':'0',
+                    'height': '50%', 
+                    'width':'80%',  
+                    'margin':height * 3.25 + 'px 0 0 10%',
+                    'background':'rgba(0,0,0,0.7)'
+                    });                                
                 break;
                 case 5:
-                ball.css({'border-radius':'0', 'height': '100px', 'width':'100%', 'margin':height * 4 + 'px 0 0 0'});
+                ball.css({
+                    'border-radius':'0', 
+                    'height': '100px', 
+                    'width':'100%', 
+                    'margin':height * 4 + 'px 0 0 0',
+                    'background':'rgba(0,0,0,0.7)'
+                });
                 break;
             }
         }
