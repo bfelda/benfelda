@@ -94,91 +94,32 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+svg{
+    position:absolute;
+    height:0;
+    width:0;
+}
+
+.imageFilter{
+    -webkit-filter: url("#blur");
+    filter: url("#blur");
+}
 
 .section {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 200;
     text-align: center;
     position: relative;
 }
 
-.bar{
-    position: absolute;
-    height: 100%;
-    width:50px; 
-    top:0;
-    background:rgba(0,0,0,0.05);
+#section1{
+    background: radial-gradient(ellipse at 100px, #98cce4 30%, #256093 45%, #0a1728 90%),white;;
+    background-attachment: fixed;
 }
 
-
-.bar.zero{
-    left:0;
-}
-
-.bar.one{
-    left:100px;
-}
-
-.bar.two{
-    left:200px;
-}
-
-.bar.three{
-    left:300px;
-}
-
-.bar.four{
-    left:400px;
-}
-
-.bar.five{
-    left:500px;
-}
-
-.bar.six{
-    left:600px;
-}
-
-.bar.seven{
-    left:700px;
-}
-
-.bar.eight{
-    left:800px;
-}
-
-.bar.nine{
-    left:900px;
-}
-
-.bar.ten{
-    left:1000px;
-}
-
-.bar.eleven{
-    left:1100px;
-}
-
-.bar.twelve{
-    left:1200px;
-}
-
-.bar.thirteen{
-    left:1300px;
-}
-
-.bar.fourteen{
-    left:1400px;
-}
-
-.bar.fifteen{
-    left:1500px;
-}
-
-.bar.sixteen{
-    left:1600px;
-}
-
-.bar.seventeen{
-    left:1750px;
+#section2{
+    background: radial-gradient(ellipse at center, #2f4344 70%,#142b39 100%),white;;
+    background-attachment: fixed; 
 }
 
 .ball{
@@ -187,9 +128,53 @@ textarea {
     z-index:1;
 }
 
+.section1head{
+    top: 15%;
+    margin-top: -80px;
+    font-size: 72px;
+    color: rgba(0,0,0,0.3);
+    position: absolute;
+    width: 100%;
+    text-align:left;
+}
+
 .section1Content{
-    position:absolute;
-    
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    top: 15%;
+    width: 100%;
+    left: 0;
+    z-index: 1;
+    height: calc(80% - 30px);
+}
+
+.section1Item{
+    width: 20%;
+    border-right: solid 1px #2f4344;
+}
+
+.section1Item:last-child{
+    border-right:none;
+}
+
+.section1Item > div{
+    position: relative;
+    overflow:hidden;
+    display:flex;
+    height:95%;
+    justify-content:center;
+}
+
+.section1Item > label{
+    font-size:1.2em;
+    color:lightgray;
+    padding: 10px;
+    display: inline-block;
+}
+
+.section1Item > div > img{
+    max-height: 100%;
 }
 
 .bottomFooter{

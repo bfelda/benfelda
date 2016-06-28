@@ -7,7 +7,6 @@
         anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'footer'],
         navigation: true,
         navigationPosition: 'left',
-        navigationTooltips: ['Intro', 'Techforce Pro', 'Core Caseworks', 'Wicked Design', 'Education', 'Contact'],
         showActiveTooltip: false,
         slidesNavigation: true,
         slidesNavPosition: 'bottom',
@@ -39,7 +38,6 @@
         //Design
         controlArrows: true,
         verticalCentered: true,
-        sectionsColor : ['aliceblue', '#4BBFC3', '#7BAABE', 'whitesmoke', 'whitesmoke'],
         responsiveWidth: 0,
         responsiveHeight: 0,
 
@@ -68,10 +66,10 @@
             switch(nextIndex){
                 case 1:
                 ball.css({
-                    'border-radius':'10px', 
+                    'border-radius':'0', 
                     'height': '80%', 
-                    'width':'80%', 
-                    'margin': height * .1 + 'px 0 0 ' + width * .1 + 'px',
+                    'width':'100%', 
+                    'margin': height * .15 + 'px 0 0 0',
                     'background':'rgba(0,0,0,0.3)'
                 });
                 break;

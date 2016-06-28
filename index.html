@@ -16,67 +16,62 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+                <filter id="blur">
+                    <!--<feGaussianBlur in="SourceGraphic" stdDeviation="3" />-->
+                </filter>
+            </defs>
+        </svg>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <!--<ul id="menu">
-            <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First section</a></li>
-            <li data-menuanchor="secondPage" class=""><a href="#secondPage">Second section</a></li>
-            <li data-menuanchor="thirdPage"><a href="#thirdPage">Third section</a></li>
-            <li data-menuanchor="fourthPage"><a href="#fourthPage">Fourth section</a></li>
-            <li data-menuanchor="footer"><a href="#footer">Footer</a></li>
-        </ul>-->
-        <!--<div id="fp-nav">
-            <ul>
-                <li data-menuanchor="firstPage" class="active">
-                    <a href="#firstPage"></a>
-                </li>
-                <li data-menuanchor="secondPage" class="active">
-                    <a href="#secondPage"></a>
-                </li>
-                <li data-menuanchor="thirdPage" class="active">
-                    <a href="#thirdPage"></a>
-                </li>
-                <li data-menuanchor="fourthPage" class="active">
-                    <a href="#fourthPage"></a>
-                </li>
-                <li data-menuanchor="footer" class="active">
-                    <a href="#footer"></a>
-                </li>
-            </ul>
-        </div>-->
         <div id="fullpage">
             <div class="ball"></div>
-            <div class="section">
-                <div class="section1Content">
-                    
+            <div class="section" id="section1">
+                <div class="section1head">
+                    Ben Felda.com
                 </div>
-                <div class="bar zero"></div>
-                <div class="bar one"></div>
-                <div class="bar two"></div>
-                <div class="bar three"></div>
-                <div class="bar four"></div>
-                <div class="bar five"></div>
-                <div class="bar six"></div>
-                <div class="bar seven"></div>
-                <div class="bar eight"></div>
-                <div class="bar nine"></div>
-                <div class="bar ten"></div>
-                <div class="bar eleven"></div>
-                <div class="bar twelve"></div>
-                <div class="bar thirteen"></div>
-                <div class="bar fourteen"></div>
-                <div class="bar fifteen"></div>
-                <div class="bar sixteen"></div>
-                <div class="bar seventeen"></div>
+                <div class="section1Content">
+                    <div class="section1Item">
+                        <label>Tattoo Designs</label>
+                        <div>
+                            <img class="imageFilter" src="img/dougTat.jpg"/>
+                        </div>
+                    </div>
+                    <div class="section1Item">
+                        <label>Artwork</label>
+                        <div>
+                            <img class="imageFilter" src="img/impaled_by_korpus.jpg"/>
+                        </div>
+                    </div>
+                    <div class="section1Item">
+                        <label>Core Caseworks LLC</label>
+                        <div>
+                            <img class="imageFilter" src="img/ccwFront.jpg"/>
+                        </div>
+                    </div>
+                    <div class="section1Item">
+                        <label>Techforce Pro LLC</label>
+                        <div>
+                            <img class="imageFilter" src="img/TFPFeatureImage.png"/>
+                        </div>
+                    </div>
+                    <div class="section1Item">
+                        <label>Midwest Custom Graphx</label>
+                        <div>
+                            <img class="imageFilter" src="img/Bike2Med.jpg"/>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="section">
+            <div class="section" id="section2">
                 <div class="slide" data-anchor="slide1">Slide 1</div>
                 <div class="slide" data-anchor="slide2"> Slide 2 </div>
                 <div class="slide" data-anchor="slide3"> Slide 3 </div>
                 <div class="slide" data-anchor="slide4"> Slide 4 </div>
             </div>
-            <div class="section">section 2</div>
+            <div id="section2" class="section">section 2</div>
             <div class="section">section 3</div>
             <div class="section fp-auto-height">
                 <div class="bottomFooter">
@@ -90,7 +85,6 @@
                 </div>
             </div>
         </div>
-
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.0/jquery.fullPage.min.js"></script>
