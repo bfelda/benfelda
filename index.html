@@ -16,13 +16,13 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
-        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <!--<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
             <defs>
                 <filter id="blur">
-                    <!--<feGaussianBlur in="SourceGraphic" stdDeviation="3" />-->
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="3" />
                 </filter>
             </defs>
-        </svg>
+        </svg>-->
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -33,45 +33,96 @@
                     Ben Felda.com
                 </div>
                 <div class="section1Content">
-                    <div class="section1Item">
-                        <label>Tattoo Designs</label>
-                        <div>
-                            <img class="imageFilter" src="img/dougTat.jpg"/>
-                        </div>
-                    </div>
-                    <div class="section1Item">
+                    <a class="section1Item" href="/#secondPage">
                         <label>Artwork</label>
-                        <div>
+                        <div class="shadow">
                             <img class="imageFilter" src="img/impaled_by_korpus.jpg"/>
                         </div>
-                    </div>
-                    <div class="section1Item">
+                    </a>
+                    <a class="section1Item" href="/#thirdPage">
                         <label>Core Caseworks LLC</label>
-                        <div>
+                        <div class="shadow">
                             <img class="imageFilter" src="img/ccwFront.jpg"/>
                         </div>
-                    </div>
-                    <div class="section1Item">
+                    </a>
+                    <a class="section1Item" href="/#fourthPage">
                         <label>Techforce Pro LLC</label>
-                        <div>
+                        <div class="shadow">
                             <img class="imageFilter" src="img/TFPFeatureImage.png"/>
                         </div>
-                    </div>
-                    <div class="section1Item">
+                    </a>
+                    <!--<a class="section1Item" href="/#fifthPage">
                         <label>Midwest Custom Graphx</label>
                         <div>
-                            <img class="imageFilter" src="img/Bike2Med.jpg"/>
+                            <img class="imageFilter" src="img/pic7.3.jpg"/>
                         </div>
-                    </div>
+                    </a>-->
                 </div>
             </div>
             <div class="section" id="section2">
+                <div class="thumbContainer">
+                    <div onclick="setActiveArtwork('../img/sweet_n_low_by_korpus.jpg')" class="shadow circleThumb">
+                        <img src="../img/sweet_n_low_by_korpus.jpg"/>
+                    </div>
+                    <div onclick="setActiveArtwork('../img/belle.jpg')" class="shadow circleThumb">
+                        <img src="../img/belle.jpg"/>
+                    </div>
+                    <div onclick="setActiveArtwork('../img/fallen Angel.jpg')" class="shadow circleThumb">
+                        <img src="../img/fallen Angel.jpg"/>
+                    </div>
+                    <div onclick="setActiveArtwork('../img/accouter_by_korpus.jpg')" class="shadow circleThumb">
+                        <img src="../img/accouter_by_korpus.jpg"/>
+                    </div>
+                    <div onclick="setActiveArtwork('../img/Chaos.jpg')" class="circleThumb">
+                        <img src="../img/Chaos.jpg"/>
+                    </div>
+                    <div onclick="setActiveArtwork('../img/impaled_by_korpus.jpg')" class="circleThumb">
+                        <img src="../img/impaled_by_korpus.jpg"/>
+                    </div>
+                    <div onclick="setActiveArtwork('../img/flameprintsmall.jpg')" class="circleThumb">
+                        <img src="../img/flameprintsmall.jpg"/>
+                    </div>
+                    <div onclick="setActiveArtwork('../img/detached1.jpg')" class="circleThumb">
+                        <img src="../img/detached1.jpg"/>
+                    </div>
+                    <div onclick="setActiveArtwork('../img/Empress of the Sun.jpg')" class="circleThumb">
+                        <img src="../img/Empress of the Sun.jpg"/>
+                    </div>
+                    <div onclick="setActiveArtwork('../img/focusmed.jpg')" class="circleThumb">
+                        <img src="../img/focusmed.jpg"/>
+                    </div>
+                    <div onclick="setActiveArtwork('../img/impaled_by_korpus.jpg')" class="circleThumb">
+                        <img src="../img/impaled_by_korpus.jpg"/>
+                    </div>
+                    <div onclick="setActiveArtwork('../img/Serenade.jpg')" class="circleThumb">
+                        <img src="../img/Serenade.jpg"/>
+                    </div>
+                    <div onclick="setActiveArtwork('../img/Stinger.jpg')" class="circleThumb">
+                        <img src="../img/Stinger.jpg"/>
+                    </div>
+                    <div onclick="setActiveArtwork('../img/twist3.jpg')" class="circleThumb">
+                        <img src="../img/twist3.jpg"/>
+                    </div>
+                    <div onclick="setActiveArtwork('../img/xosome_by_korpus.jpg')" class="circleThumb">
+                        <img src="../img/xosome_by_korpus.jpg"/>
+                    </div>
+                    <div onclick="setActiveArtwork('../img/Zeus copy.jpg')" class="circleThumb">
+                        <img src="../img/Zeus copy.jpg"/>
+                    </div>
+                    <div onclick="setActiveArtwork('../img/Waste.jpg')" class="circleThumb">
+                        <img src="../img/Waste.jpg"/>
+                    </div>
+                </div>
+                <div class="artworkContainer">
+                    <img id="activeArtwork" class="shadow"/>
+                </div>
+            </div>
+            <div class="section" id="section3">
                 <div class="slide" data-anchor="slide1">Slide 1</div>
                 <div class="slide" data-anchor="slide2"> Slide 2 </div>
                 <div class="slide" data-anchor="slide3"> Slide 3 </div>
                 <div class="slide" data-anchor="slide4"> Slide 4 </div>
             </div>
-            <div id="section2" class="section">section 2</div>
             <div class="section">section 3</div>
             <div class="section fp-auto-height">
                 <div class="bottomFooter">

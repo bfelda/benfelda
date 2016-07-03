@@ -100,6 +100,11 @@ svg{
     width:0;
 }
 
+.shadow {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.4)0px 5px 10px;
+    box-shadow: rgba(0, 0, 0, 0.4)0px 5px 10px;
+}
+
 .imageFilter{
     -webkit-filter: url("#blur");
     filter: url("#blur");
@@ -113,13 +118,57 @@ svg{
 }
 
 #section1{
-    background: radial-gradient(ellipse at 100px, #98cce4 30%, #256093 45%, #0a1728 90%),white;;
-    background-attachment: fixed;
+    background: radial-gradient(ellipse at 100px, #98cce4 0%, #256093 30%, #0a1728 90%),#0a1728;
 }
 
 #section2{
-    background: radial-gradient(ellipse at center, #2f4344 70%,#142b39 100%),white;;
-    background-attachment: fixed; 
+    background:radial-gradient(ellipse at center, rgba(0,0,0,0) 30%,rgba(0,0,0,0.8) 100%),aliceblue url('../img/baroque-bg.svg');
+    /*background: url('../img/baroque-bg.svg') no-repeat center center, #69008C radial-gradient(ellipse at center, rgba(70,0,103,0.8) 10%,rgba(70,0,103,0.1) 100%);*/
+}
+
+#section2 .thumbContainer{
+    width: calc(35% - 50px);
+    height: 100%;
+    position: absolute;
+    left: 50px;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow:hidden;
+}
+
+#section2 .thumbContainer .circleThumb{
+    z-index: 1;
+    margin:7px;
+    width: 90px;
+    height: 90px;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    border: 5px solid white;
+    background:white;
+    cursor:pointer;
+}
+
+#section2 .thumbContainer .circleThumb img{
+    width:100%;
+}
+
+#section2 .artworkContainer{
+    margin-left: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section2 .artworkContainer #activeArtwork{
+    max-height:90%;
+    max-width:90%;
 }
 
 .ball{
@@ -143,15 +192,14 @@ svg{
     display: flex;
     justify-content: space-around;
     top: 15%;
-    width: 100%;
-    left: 0;
+    width: 90%;
+    left: 5%;
     z-index: 1;
     height: calc(80% - 30px);
 }
 
 .section1Item{
-    width: 20%;
-    border-right: solid 1px #2f4344;
+    width: 25%;
 }
 
 .section1Item:last-child{

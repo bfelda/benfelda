@@ -1,4 +1,9 @@
-(function(){
+
+    function setActiveArtwork(url){
+        $('#activeArtwork').attr('src', url);
+    }  
+
+
    $(document).ready(function() {
     $('#fullpage').fullpage({
                 //Navigation
@@ -56,18 +61,19 @@
         onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){
             
         }
-    });
-    setBall(1);     
+    }); 
     
+    setBall(1);  
+    setActiveArtwork('../img/Waste.jpg');
     function setBall(nextIndex){
             var ball = $('.ball');
-            var height = $('#fullpage').height();
-            var width = $('#fullpage').width();
+            var height = Math.round($('#fullpage').height());
+            var width = Math.round($('#fullpage').width());
             switch(nextIndex){
                 case 1:
                 ball.css({
                     'border-radius':'0', 
-                    'height': '80%', 
+                    'height': '80%',
                     'width':'100%', 
                     'margin': height * .15 + 'px 0 0 0',
                     'background':'rgba(0,0,0,0.3)'
@@ -76,20 +82,29 @@
                 case 2:
                 ball.css({
                     'border-radius':'0', 
-                    'height': '50%', 
-                    'width':'100%',  
-                    'margin': height * 1.25 + 'px 0 0 0',
-                    'background':'rgba(0,0,0,0.7)'
-                });                
+                    'height': '100%', 
+                    'width':'35%',  
+                    'margin': height + 'px 25% 0 0',
+                    'background':'rgba(19,48,77,0.3)'
+                }); 
+                // var ballWidth = height * 1.3,
+                //     ballMarginLeft = (width/2) - (ballWidth/2);
+                // ball.css({
+                //     'border-radius':'50%', 
+                //     'height': '130%', 
+                //     'width':ballWidth,  
+                //     'margin':height * .85 + 'px 0 0 ' + ballMarginLeft + 'px',
+                //     'background':'rgba(0,0,0,0.5)'
+                // });
                 break;
                 case 3:
                 ball.css({
-                    'border-radius':'50%', 
+                    'border-radius':'0', 
                     'height': '50%', 
-                    'width':ball.height(),  
-                    'margin':height * 2.25 + 'px 0 0 55%',
+                    'width':'100%',  
+                    'margin': height * 2.25 + 'px 0 0 0',
                     'background':'rgba(0,0,0,0.7)'
-                });
+                });                
                 break;
                 case 4:
                 ball.css({
@@ -112,4 +127,3 @@
             }
         }
     }); 
-}());
