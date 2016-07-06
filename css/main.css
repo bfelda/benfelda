@@ -118,13 +118,92 @@ svg{
 }
 
 #section1{
-    background: radial-gradient(ellipse at 100px, #98cce4 0%, #256093 30%, #0a1728 90%),#0a1728;
+    background: radial-gradient(ellipse at 100px, #98cce4 0%, #256093 30%, #112745 90%),white;
 }
 
 #section2{
     background:radial-gradient(ellipse at center, rgba(0,0,0,0) 30%,rgba(0,0,0,0.8) 100%),aliceblue url('../img/baroque-bg.svg');
-    /*background: url('../img/baroque-bg.svg') no-repeat center center, #69008C radial-gradient(ellipse at center, rgba(70,0,103,0.8) 10%,rgba(70,0,103,0.1) 100%);*/
 }
+
+.slide1BG{
+    width:100%;
+    height:100%;
+    background: url('../img/ccw/Room1002.jpg') no-repeat center center;
+    background-size:cover;
+}
+
+.slide2BG{
+    width:100%;
+    height:100%;
+    background: url('../img/tfp/tfpBackground.jpg') no-repeat center center;
+    background-size:cover;
+}
+
+.slide2TextContainer{
+    transition: color .5s linear, background .5s linear;
+    background:rgba(255,255,255,0);
+    position:absolute;
+    text-align: left;
+    font-size: 24px;
+    line-height: 1.5;
+    z-index: 3;
+    width:45%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:7px;
+    color:white;
+    top:27%;
+    left:20px;
+}
+
+#section3{
+    background:radial-gradient(ellipse at center, #f9d3c0 30%,#ef622c 100%),white;    
+}
+
+.textContainer{
+    font-size: 24px;
+    position: absolute;
+    line-height: 1.5;
+    z-index: 3;
+    text-align: right;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    right: 15px;
+    padding: 7px;
+}
+
+.textContainer > a{
+    margin-bottom: 30px;
+}
+
+/*#section3 .slide .slideContent{
+    display:flex;
+    justify-content: space-around;
+}
+
+#section3 .slide .textContainer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section3 .slide p{
+    margin:20px;
+    color:white;
+    font-size:1.2em;
+    line-height:1.2;
+}
+
+#section3 .slide img{
+    max-height:80%;
+    max-width:80%;
+}*/
 
 #section2 .thumbContainer{
     width: calc(35% - 50px);
@@ -172,9 +251,8 @@ svg{
 }
 
 .ball{
-    transition: all ease-in-out .4s;
+    transition: all ease-in-out .5s;
     position:absolute;
-    z-index:1;
 }
 
 .section1head{
@@ -238,7 +316,7 @@ svg{
     margin: 35px 0 0 -100px;
 }
 
-.bottomFooter>div span{
+.bottomFooter>div a{
     color:white;
     font-size:24px;
     margin:0 10px;
