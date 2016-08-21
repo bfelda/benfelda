@@ -84,7 +84,7 @@
                 ball.css({
                     'border-radius':'0', 
                     'height': '100%', 
-                    'width':'35%',  
+                    'width':'37%',  
                     'margin': height + 'px 25% 0 0',
                     'z-index':1,
                     'background':'rgba(19,48,77,0.3)'
